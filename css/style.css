@@ -25,56 +25,104 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
-.logo:hover{
-    border: 3px #0065FC  solid ; 
-    font-weight: 500; 
-    width: 61px;
-    height: 19px;
-    top: 30px;
+
+.logo{
+   
+    width: 25px;
+    height: 25px;
+    top: 38.56px;
+    left: 65.54px;
+    color: #0065FC;
     
 }  
-
-
+.haut1{
+    width: 112px;
+    height: 19px;
+    top: 16px;
+    font-weight: 400;
+    size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0065FC;
+    text-align: end;
+    
+ } 
+ .haut1:hover{
+    border-top: 3px #0065FC  solid ; 
+    font-weight: 500; 
+ 
+ }    
+ .haut2{
+    width: 112px;
+    height: 19px;
+    top: 16px;
+    font-weight: 400;
+    size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000;
+    text-align: end;
+      
+ }
+ .droite{
+    display: flex;
+    justify-content: flex-end;
+ }    
 
 .index{
     text-decoration: none;
     color: #000;
     text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 50px;
+    height: 49px;
+    background-color: #F2F2F2;
 } 
 .index i{
     color: #000;
-}    
-.index{
-    border-top-left-radius: 17px;
-    border-bottom-left-radius: 17px;
-    width: 40px;
-    height: 40px;
-    background-color: #F2F2F2;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    width: 50px;
     
-} 
+}    
+
+
 .marseille {
     text-align: center;
-    height: 40px;
-    width: 160px;
+    height: 49px;
+    width: 147px;
     border-color: #f2f2f2;
     background-color: #fff;
     color: #000;
     text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    
 }   
 .button{
-
     border-top-right-radius: 17px;
     border-bottom-right-radius: 17px;
-    width: 160px;
-    height: 40px;
+    width: 147px;
+    height: 49px;
     background-color: #0065FC;
     border-color: #0065FC;
     color: #f2f2f2;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
 }   
 .menu{
     display: flex;
     flex-direction: row;
+    padding: 23px;
+    
+    
+    
 }  
 .filtre{
     display:flex;
@@ -83,45 +131,113 @@ body {
     gap: 10px;
     }   
     .filtre_element{ 
-        width: 160px;
-        height: 40px; 
+        width: 170px;
+        height: 29px; 
         border: 3px  solid #F2F2F2;
         border-radius:20%;
         text-decoration: none;
-        justify-items: center; 
-    }     
-   .filtre_element a{
+        padding: 23px;
+        color: #000;
+
+    }  
+   .filtre_element fa-solid{
         text-decoration: none;
         display: wrap;
         flex-direction: wrap;
-        justify-items: center;
-    
+        justify-content: center;
+        text-align: center;
+        padding: 23px;
+        color: #0065FC;
     }  
-    .info,
-    .i{
-    border-radius: 50% 3px #f2f2f2;
-    height: 20px;
-    width: 20px;
-    }    
-         
+    .filtre_element a{
+        text-decoration: none;
+        display: wrap;
+        flex-direction: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 23px;
+        color: #000;
+    }   
+    
+    
+    .filtre_element:nth-of-type(4){
+        display: wrap;
+        flex-direction: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 23px;
+        color: #000;
+        background-color: #73a4f3fc;
+      
+    }   
+    .fleche,
+    .fa-solid fa-play{
+        display: flex;
+        justify-content: flex-end;
+        font-style: italic;
+        font-weight: 700;
+        display: flex;
+        align-items: flex-end;
+        border-color: #0065FC;
+        color: #ffff;
+        
+
+    }   
+
+   
+    .fa-info,
+    .i{ 
+        color:#0065fce6;
+        display: flex;
+        size: 19px;
+        flex-direction: row;
+        align-items: center;
+        width: 40px; 
+        height: 40px;
+        border: 3px solid #F2F2F2 ;
+        border-radius: 50px;
+        background-color:#fff;
+        
+        
+    }  
+    
+    .info{
+    font-weight: 400;   
+    size: 16px; 
+    height: 19px;
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding-left: 50px;
+    
+ }   
+ .hebergemetsamarseille{
+    padding-bottom: 10px;
+    padding-top: 10px;
+ }   
 .hebergements-cards img {
-    width: 146px;
+    width: 100%;
     height: 80px;
     border-radius: 20%;
-}  
-.hebergements-cards .card-conItent {
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-    }   
+    flex-direction: row;
+}   
+.hebergements-and-populaires .card{
+    width: 210px
+}  
+.hebergements-cards .card-content {
+    width: 100%;
+    
+    
+ }   
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);  
     border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-    width: 65%;
+    gap: 30px;
+
+    
 }  
 
 .hebergements-cards{
@@ -133,7 +249,7 @@ body {
 
 }  
 .afficherplus{
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     
@@ -143,21 +259,42 @@ body {
     flex-direction: row;
 }   
 
-.voir-activites img{
-    text-align: center ;
+.voir-activites {
+    width: 284px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   
 }  
+.dimensions{
+    height: 59px;
+    width: 284px;
+    border: 3px dotted #DEEBFF;
+    border-radius: 0px 0px 20px 20px ;
+} 
+footer{
+    padding-top: 20px;
+    background-color: #f2f2f2;
+}   
 nav{
     display: flex;
     width: 100%; 
     justify-content: space-around;
-    align-items:center ;
-   
+    color: #000 ;
+    font-weight: 400;
+    size: 16px;
+    line-height: 19px;
+    text-align: left;
 }  
+nav a{
+    font-weight: 800;
+    text-align: left;
+}
+
+
 .conteneur2{
     display: block;
     flex-direction: row;
     align-content: center;
-    
 }  
  
 .apropos,
@@ -194,7 +331,7 @@ flex-direction: inline;
     font-size: 22px;
 }  
 
-.
+
 .card {
     background-color: white;
     border-radius: 20px;
@@ -280,7 +417,7 @@ flex-direction: inline;
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-.
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
