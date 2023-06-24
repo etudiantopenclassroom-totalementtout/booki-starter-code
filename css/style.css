@@ -25,176 +25,371 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
-.logo:hover{
-    border: 3px #0065FC  solid ; 
-    font-weight: 500; 
-    width: 61px;
-    height: 19px;
-    top: 30px;
+
+.logo{
+   
+    width: 25px;
+    height: 25px;
+    top: 38.56px;
+    left: 65.54px;
+    color: #0065FC;
     
 }  
-
-
-
+/*** Hebergement***/
+.haut1{
+    width: 112px;
+    height: 19px;
+    top: 16px;
+    font-weight: 400;
+    size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0065FC;
+    text-align: end;
+    text-decoration: none;
+    
+ } 
+ .haut1:hover{
+    border-top: 3px #0065FC  solid ; 
+    font-weight: 500; 
+    text-decoration: none;
+ 
+ }   
+  /***Activités***/
+ .haut2{
+    width: 112px;
+    height: 19px;
+    top: 16px;
+    font-weight: 400;
+    size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000;
+    text-align: end;
+    text-decoration: none;
+      
+ }  
+       /***Mettre Hébergements et Activités à droite***/
+ .droite{
+    display: flex;
+    justify-content: flex-end;
+ }    
+          /***Bordure du logo de localisation***/
 .index{
     text-decoration: none;
     color: #000;
     text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 50px;
+    height: 49px;
+    background-color: #F2F2F2;
 } 
+
+            /***Pour mettre la phrase : trouver votre logement...ou en plein centre ou en pleine nature***/
+.trouvervotrehebergement{
+    size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}   
+
+
+           /***Localisation***/
 .index i{
     color: #000;
-}    
-.index{
-    border-top-left-radius: 17px;
-    border-bottom-left-radius: 17px;
-    width: 40px;
-    height: 40px;
-    background-color: #F2F2F2;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    width: 50px;
     
-} 
+}    
+
+          /***le bouton Marseille***/
 .marseille {
     text-align: center;
-    height: 40px;
-    width: 160px;
+    height: 49px;
+    width: 147px;
     border-color: #f2f2f2;
     background-color: #fff;
     color: #000;
     text-decoration: none;
-}   
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    
+}          /***le bouton Recherche***/
 .button{
-
     border-top-right-radius: 17px;
     border-bottom-right-radius: 17px;
-    width: 160px;
-    height: 40px;
+    width: 147px;
+    height: 49px;
     background-color: #0065FC;
     border-color: #0065FC;
     color: #f2f2f2;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
 }   
+            /***Mettre sur la même ligne la localisation, Marseille et le boutton recherche***/
 .menu{
     display: flex;
     flex-direction: row;
-}  
+    padding: 23px;
+    
+}
+
+         
+
+               /***Mettre sur la même ligne Filtres, Economique, Familial, Romantique, Nos pépites***/
 .filtre{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
+    text-align: center;
+
     }   
+              
+
+                  /***Bordures pour les élements du filtres (Econommique, Familial, Romantique, Nos pépites***/
     .filtre_element{ 
-        width: 160px;
-        height: 40px; 
+        width: 170px;
+        height: 29px; 
         border: 3px  solid #F2F2F2;
         border-radius:20%;
         text-decoration: none;
-        justify-items: center; 
-    }     
-   .filtre_element a{
+        padding: 23px;
+        color: #000;
+        text-decoration: none;
+
+    }  
+                           /***Pour agir sur le fontawesome des éléments***/
+   .filtre_element fa-solid{
         text-decoration: none;
         display: wrap;
         flex-direction: wrap;
-        justify-items: center;
-    
+        justify-content: center;
+        text-align: center;
+        padding: 23px;
+        color: #0065FC;
     }  
-    .info,
-    .i{
-    border-radius: 50% 3px #f2f2f2;
-    height: 20px;
-    width: 20px;
-    }    
-         
-.hebergements-cards img {
-    width: 146px;
-    height: 80px;
-    border-radius: 20%;
-}  
-.hebergements-cards .card-conItent {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+                          /**Pour agir sur les liens des éléments***/
+    .filtre_element a{
+        text-decoration: none;
+        display: wrap;
+        flex-direction: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 23px;
+        color: #000;
+        text-decoration: none;
     }   
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);  
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
-    width: 65%;
-}  
-
-.hebergements-cards{
+    
+                        /***Pour agir sur  le dernier élément, et lui mettre la couleur bleue***/
+    .filtre_element:nth-of-type(4){
+        display: wrap;
+        flex-direction: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 23px;
+        color: #000;
+        background-color: #DEEBFF;
+      
+    }   
+    
+                       /***Pour faire le rond du i***/
+                  
+    
+    .information{ 
+        color:#0065fce6;
+        display: flex;
+        size: 19px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 40px; 
+        height: 40px;
+        border-radius:  50%;
+        background-color:#fff;
+        border: solid #DEEBFF;
+        justify-content: center;
+                
+    }  
+                        /***Pour faire la phrase de Plus de 500 logements disponibles dans cette ville ***/
+    .info{
+    font-weight: 400;   
+    size: 16px; 
+    height: 19px;
+    width: 550px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    align-content: end;
+    justify-content: end;
     
+   
 
-}  
-.afficherplus{
-    font-weight: 700;
+    
+ }   
+                             
+                     /*** Pour agir sur la dimension de l'image de la carte hébergements***/
+.hebergements-cards img {
+    width: 100%;
+    height: 124px;
+    border-radius: 20%;
+    width: 210px;
+    
+}   
+                     
+
+
+                     /***Pour agir sur le contenu de la carte hébergements***/
+.hebergements-cards .card-content {
+    width: 65%;
+ }  
+
+   .cartecliquable{
+    text-decoration: none;
+   }                         
+ 
+
+                 /****Pour mettre  plus***/
+ .afficherplus{
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     
 }   
+
+                /*** Pour mettre les colonnes Activités sous forme de ligne ***/
 .conteneur1{
     display: flex;
     flex-direction: row;
+    gap : 20px;
 }   
 
-.voir-activites img{
-    text-align: center ;
-}  
+              /*** Pour mettre les bordures des cartes activités***/
+.voir-activites { 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 274px;
+    padding-bottom: 3px;
+    }  
+
+            /***Pour l'ombre sur les noms des cartes, leurs dimensions et bordures et centrer les noms de cartes***/
+
+ .dimensions{
+    box-shadow:  (4px 4px 75px #f2f2f2);
+    text-shadow: #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 0px 0px 17px 17px;
+    height: 2px;
+    width: 274px;
+    padding-bottom: 70px; 
+   text-align: center;
+   justify-content: center;
+
+ }     
+
+          
+
+ 
+
+
+             /***Pour mettre  la couleur grise sur le footer ***/
+footer{
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    
+}   
+            /***Pour mettre le texte du menu***/
 nav{
     display: flex;
     width: 100%; 
     justify-content: space-around;
-    align-items:center ;
-   
+    color: #000 ;
+    font-weight: 400;
+    size: 16px;
+    line-height: 19px;
+    text-align: left;
 }  
+            /***Pour mettre en gras le menu***/
+nav a{
+    font-weight: 800;
+    text-align: left;
+}
+
+           /***Pour mettre en colonne les menu et textes du footer***/
 .conteneur2{
     display: block;
     flex-direction: row;
     align-content: center;
-    
+    width: 375px;
+    height: 461px;
 }  
- 
+           /***Pour retirer le soulignement et mettre en gras le texte du menu***/
 .apropos,
 .noshebergements,
 .assistance{
     text-decoration: none;
     color: #000;
-}    
+} 
 
-/***
-.apropos{       
-width: 15%;
-margin: 0px 20px;
-display:column ;
-flex-direction: inline; 
-}   
-.noshebergements{       
-    width: 15%;
-    margin: 0px 20px;
-    display:column;
-    flex-direction: inline; 
+
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);  
+    border-radius: 20px;
+    gap: 30px;
+
     
-}        
-.assistance{       
-        width: 15%;
-        margin: 0px 20px;
-        display: column;
-        flex-direction: inline; 
-        
- }       ***/ 
+}  
+  /***Pour mettre les cartes hébergements sur deux lignes el mettre les espaces entre les cadres***/
+.hebergements-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    
+
+}  
+                       /****MENUS POUR LE PORTABLE*****/
+  /***Pour rendre le menu du portable invisible pour le destop***/
+  .menuportable{
+    display:none;
+    }
+           /***Pour rendre le menu trouvervotrehebergement pour le portable invisible pour le destop***/
+    .trouvervotrehebergementpourleportable{
+        display: none;
+    }  
+     /****Pour rendre invisble au destop le deuxième menu, filtre et Economique, Familial, Romantique et Nos pépites***/
+.filtreportable{
+    display: none;
+}
+.filtre_elementportable{
+    display: none;
+}
+         /****Pour rendre invisible pour le destop le i de l'info et la pharse qui la suit : Plus de 500 logements***/
+
+.informationportable{
+    display: none;
+}
+.infoportable{
+    display: none;
+}
+
+
 
 .section-title {
     margin: 0;
     font-size: 22px;
 }  
 
-.
+
 .card {
     background-color: white;
     border-radius: 20px;
@@ -205,10 +400,10 @@ flex-direction: inline;
 .card img {
     object-fit: cover;
 }
-
+               
 .card-title {
     font-size: 16px;
-}
+}   
 
 .euro {
     font-weight: 700;
@@ -280,7 +475,7 @@ flex-direction: inline;
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-.
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -322,5 +517,236 @@ flex-direction: inline;
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    /***header***/
+    header,
+    .logo{
+    grid-column-start: 1;
+    align-items: center;
+}  
+ /***Mettre Hébergements et Activités à droite***/
+ .droite{
+    display: flex;
+    justify-content: flex-end;
+
+        
+ }  
+                     /***Pour mettre le bouton du menu du destop invisible pour le portable***/
+.menu{
+    display: none;
+}     
+ 
+
+          /***Bordure du logo de localisation du portable***/
+.indexportable{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 50px;
+    height: 49px;
+    background-color: #F2F2F2;
+    margin: auto;
+    top: 16px;  
+} 
+           /***Localisation du portable***/
+.indexportable i{
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 49px;
+    width: 50px;
+    
+}    
+
+          /***le bouton Marseille du portable***/
+.marseilleportable {
+    text-align: center;
+    height: 49px;
+    width: 147px;
+    border-color: #f2f2f2;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    
+}          /***le bouton Recherche du portable***/
+.boutonportable{
+    border-radius: 17px;
+    width: 49px;
+    height: 49px;
+    background-color: #0065FC;
+    border-color: #0065FC;
+    color: #f2f2f2;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 15PX 16px;
+    gap: 10px;
+    left: 286px;
+}   
+
+
+            /***Mettre sur la même ligne la localisation, Marseille et le boutton recherche du portable***/
+.menuportable{
+    display: flex;
+    flex-direction: row;
+    padding: 23px;
+    
 }
+
+
+
+.filtreportable{
+    display: flex;
+    flex-direction: column;
+}  
+
+ /***Bordures pour les élements du filtres (Econommique, Familial, Romantique, Nos pépites***/
+ .filtre_element{ 
+    width: 170px;
+    height: 29px; 
+    border: 3px  solid #F2F2F2;
+    border-radius:20%;
+    text-decoration: none;
+    padding: 23px;
+    color: #000;
+    text-decoration: none;
+
+}  
+                       /***Pour agir sur le fontawesome des éléments***/
+.filtre_elementportable fa-solid{
+    text-decoration: none;
+    display: wrap;
+    flex-direction: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 23px;
+    color: #0065FC;
+}  
+                      /**Pour agir sur les liens des éléments***/
+.filtre_elementportable a{
+    text-decoration: none;
+    display: wrap;
+    flex-direction: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 23px;
+    color: #000;
+    text-decoration: none;
+}   
+
+                    /***Pour agir sur  le dernier élément, et lui mettre la couleur bleue***/
+.filtre_element:nth-of-type(4){
+    display: wrap;
+    flex-direction: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 23px;
+    color: #000;
+    background-color: #DEEBFF;
+  
+}   
+
+
+
+.filtre_element:nth-of-type(3){
+    display: wrap;
+    flex-direction: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 23px;
+    color: #000;
+    background-color: #73a4f3fc;
+  
+}   
+            /****Pour rendre invisible le filtre_element;nth-of-type(4) au portable***/
+            
+.filtre_element{
+    display: wrap;
+    flex-direction: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 23px;
+    color: #000;
+}   
+
+.hebergements{
+    width: 100%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}   
+.haut1:hover{
+    border-bottom: 3px #0065FC  solid ;*
+    font-weight:500; 
+ 
+ }  
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutralStar {
+    color: var(--main-bg-color)
+}
+
+/****** Hebergements And Populaires ***********/
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);  
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+.conteneur1{
+display: flex;
+flex-direction:column ;
+
+}  
+.conteneur2,
+.apropos{
+    width: 193px;
+    
+}
+.conteneur2,
+.noshebergements{
+    width: 193px;
+    
+}
+
+.conteneur2,
+.assistance{
+    width: 193px;
+    
+}
+.conteneur2
+.apropos,
+.noshebergements,
+.assistance{
+ display: block;   
+ flex-direction: column;
+ flex:wrap;
+ flex-wrap: wrap;
+}  
+}   
